@@ -1,91 +1,85 @@
-# Flower-Species-Recognition-using-ML
-A deep learning-based flower species recognition system using transfer learning and ensemble learning across multiple public flower datasets.
+# 🌸 Flower Species Recognition using Heterogeneous Ensemble Learning
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+</p>
+
+A deep learning-based flower species recognition system using **Transfer Learning** and **Heterogeneous Ensemble Learning** with **VGG16**, **DenseNet121**, and **InceptionV3**.
+
 ---
-## 📖 Project Overview
 
-Flower species recognition is a challenging image classification problem due to the high visual similarity between flower species and variations in lighting, background, viewpoint, and image quality.
+# 📖 Project Overview
 
-This project proposes a **heterogeneous ensemble learning framework** that combines the strengths of multiple pre-trained Convolutional Neural Networks (CNNs) to achieve more accurate and robust flower classification.
+This project investigates the effectiveness of **heterogeneous ensemble learning** for flower species recognition.
 
-Three baseline CNN models are implemented:
+Instead of relying on a single CNN architecture, this project combines the prediction outputs of multiple deep learning models to improve classification accuracy and robustness.
 
-- VGG16
-- DenseNet121
-- InceptionV3
+The framework is evaluated using **three public flower datasets** with different classification complexities.
 
-Three ensemble learning techniques are evaluated:
+---
+
+# 🎯 Project Objectives
+
+✅ Develop a flower species recognition system using transfer learning.
+
+✅ Implement heterogeneous ensemble learning.
+
+✅ Compare Soft Voting, Weighted Voting and Stacking.
+
+✅ Evaluate the proposed framework on multiple public datasets.
+
+---
+
+# 🌼 Datasets
+
+| Dataset | Classes | Purpose |
+|----------|---------:|----------------|
+| 🌸 Kaggle Flowers Recognition | 5 | Simple classification |
+| 🌼 TensorFlow Flowers | 5 | Balanced dataset |
+| 🌺 Oxford-102 Flowers | 102 | Fine-grained classification |
+
+---
+
+# 🧠 Models
+
+## Baseline CNN
+
+- ✅ VGG16
+- ✅ DenseNet121
+- ✅ InceptionV3
+
+## Ensemble Learning
 
 - Soft Voting
 - Weighted Voting
 - Stacking
 
-The proposed framework is evaluated using three publicly available flower datasets with different levels of classification complexity.
-
 ---
 
-## 🚀 Features
-
-- Transfer Learning using ImageNet pre-trained models
-- Three baseline CNN architectures
-- Multiple ensemble learning strategies
-- Image preprocessing and data augmentation
-- Performance comparison across multiple datasets
-- Automatic performance evaluation
-- Confusion Matrix
-- Classification Report
-- Accuracy comparison charts
-
----
-
-## 📂 Datasets
-
-This project evaluates the proposed framework on three public datasets.
-
-| Dataset | Classes |
-|----------|---------:|
-| Kaggle Flowers Recognition | 5 |
-| TensorFlow Flowers | 5 |
-| Oxford-102 Flowers | 102 |
-
----
-
-## 🧠 Model Architecture
-
-### Baseline Models
-
-- VGG16
-- DenseNet121
-- InceptionV3
-
-### Ensemble Models
-
-- Soft Voting
-- Weighted Voting
-- Stacking
-
----
-
-## 🔄 Project Workflow
+# 🔄 Workflow
 
 ```text
 Flower Dataset
         │
         ▼
-Data Preprocessing
-(Image Resize, Normalization,
-Data Augmentation)
+Preprocessing
+(Resize • Normalize • Augmentation)
+        │
+        ▼
+Transfer Learning
         │
         ▼
 Baseline CNN Models
-├── VGG16
-├── DenseNet121
-└── InceptionV3
+(VGG16 • DenseNet121 • InceptionV3)
         │
         ▼
 Ensemble Learning
-├── Soft Voting
-├── Weighted Voting
-└── Stacking
+(Soft Voting • Weighted Voting • Stacking)
         │
         ▼
 Performance Evaluation
@@ -94,121 +88,121 @@ Performance Evaluation
 Accuracy Comparison
 ```
 
----
+> 📷 **Workflow Diagram**
 
-## 🛠 Libraries Used
+Insert your workflow image here.
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- OpenCV
-- Kaggle Notebook
-- Google Colab
+```
+images/workflow.png
+```
 
 ---
 
-## 📦 Installation
+# 🚀 Quick Start
 
-Install the required libraries.
+### Clone Repository
 
 ```bash
-pip install tensorflow
-pip install keras
-pip install numpy
-pip install pandas
-pip install matplotlib
-pip install scikit-learn
-pip install opencv-python
-pip install pillow
+git clone
+```
+
+### Install Libraries
+
+```bash
+pip install tensorflow keras numpy pandas matplotlib scikit-learn opencv-python pillow
 ```
 ---
-## 📊 Experimental Results
 
-### Kaggle Flowers Recognition Dataset
+# 📊 Experimental Results
 
-| Model | Accuracy (%) |
-|------|-------------:|
-| VGG16 | 82.33 |
-| DenseNet121 | 90.60 |
-| InceptionV3 | 91.28 |
-| Soft Voting | 92.39 |
-| Stacking | 92.84 |
-| **Weighted Voting** | **93.06** |
+## 🌸 Kaggle Flowers
 
----
-
-### TensorFlow Flowers Dataset
-
-| Model | Accuracy (%) |
-|------|-------------:|
-| VGG16 | 84.55 |
-| DenseNet121 | 90.58 |
-| InceptionV3 | 95.29 |
-| Soft Voting | 96.07 |
-| Weighted Voting | 96.34 |
-| **Stacking** | **98.17** |
+| Model | Accuracy |
+|------|---------:|
+| VGG16 | 82.33% |
+| DenseNet121 | 90.60% |
+| InceptionV3 | 91.28% |
+| Soft Voting | 92.39% |
+| Stacking | 92.84% |
+| 🥇 **Weighted Voting** | **93.06%** |
 
 ---
 
-### Oxford-102 Flower Dataset
+## 🌼 TensorFlow Flowers
 
-| Model | Accuracy (%) |
-|------|-------------:|
-| VGG16 | 79.13 |
-| DenseNet121 | 87.58 |
-| InceptionV3 | 92.42 |
-| Stacking | 93.66 |
-| Soft Voting | **93.79** |
-| Weighted Voting | **93.79** |
+| Model | Accuracy |
+|------|---------:|
+| VGG16 | 84.55% |
+| DenseNet121 | 90.58% |
+| InceptionV3 | 95.29% |
+| Soft Voting | 96.07% |
+| Weighted Voting | 96.34% |
+| 🥇 **Stacking** | **98.17%** |
 
 ---
 
-## 🏆 Final Outcome
+## 🌺 Oxford-102 Flowers
 
-The proposed heterogeneous ensemble learning framework consistently outperformed the individual CNN baseline models across all datasets.
+| Model | Accuracy |
+|------|---------:|
+| VGG16 | 79.13% |
+| DenseNet121 | 87.58% |
+| InceptionV3 | 92.42% |
+| Stacking | 93.66% |
+| 🥇 Soft Voting | **93.79%** |
+| 🥇 Weighted Voting | **93.79%** |
+
+---
+
+# 🏆 Final Performance
 
 | Dataset | Best Model | Accuracy |
-|----------|-----------|---------:|
-| Kaggle Flowers Recognition | Weighted Voting | **93.06%** |
-| TensorFlow Flowers | Stacking | **98.17%** |
-| Oxford-102 Flowers | Soft Voting / Weighted Voting | **93.79%** |
-
-The results demonstrate that combining multiple CNN architectures through ensemble learning significantly improves flower species recognition performance and model robustness.
+|---------|-----------|---------:|
+| 🌸 Kaggle Flowers | Weighted Voting | **93.06%** |
+| 🌼 TensorFlow Flowers | Stacking | **98.17%** |
+| 🌺 Oxford-102 Flowers | Soft Voting / Weighted Voting | **93.79%** |
 
 ---
 
-## 📁 Repository Structure
+# ⭐ Key Achievements
 
-```
-├── Kaggle Flowers Recognition
-├── TensorFlow Flowers
-├── Oxford-102 Flowers
-├── Models
-├── README.md
+- ✅ Evaluated **3 public flower datasets**
+- ✅ Compared **3 transfer learning CNN models**
+- ✅ Implemented **3 ensemble learning techniques**
+- ✅ Achieved **98.17% classification accuracy**
+- ✅ Outperformed previous studies across all datasets
+
+---
+
+# 📂 Repository Structure
+
+```text
+📦 Flower-Species-Recognition-using-ML
+│
+├── 📁 Kaggle Flowers
+├── 📁 TensorFlow Flowers
+├── 📁 Oxford-102 Flowers
+└── README.md
 ```
 
 ---
 
-## 📚 Conference Paper
+# 📑 Conference Paper
 
 **Title**
 
-> “Comparative Analysis of Pre-trained CNN Architectures for Multiclass Flower Species Recognition”
+> Comparative Analysis of Pre-trained CNN Architectures for Multiclass Flower Species Recognition
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Teo Jing An**
 
 Bachelor of Computer Science (Artificial Intelligence)
 
+Multimedia University (MMU)
+
 ---
 
-## 📜 License
-
-This project is developed for academic and research purposes.
+# ⭐ If you find this project useful, please consider giving it a star!
