@@ -89,29 +89,27 @@ Performance Evaluation
 Accuracy Comparison
 ```
 
-## 📁 Repository Structure
+## 📁 Repository Structure & Notebook Links
 
-```
-├── SourceCode/
-│   │
-│   └── Code/
-│       │
-│       ├── Model_Training/
-│       │   ├── Kaggle Flowers.ipynb
-│       │   ├── TensorFlow Flowers.ipynb
-│       │   └── Oxford-102 Flowers.ipynb
-│       │
-│       └── EnsembleModel_Implementation/
-│           ├── Kaggle Flowers.ipynb
-│           ├── TensorFlow Flowers.ipynb
-│           └── Oxford-102 Flowers.ipynb
-```
-| Folder                           | Description                                                                                                                                                                                                                                                |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Model**                        | Contains the trained CNN models (.keras/.h5) for each dataset. These models are used by the ensemble implementation and do not need to be retrained unless required.                                                                                       |
-| **Code**                         | Contains all Jupyter Notebook (`.ipynb`) source code used in this project.                                                                                                                                                                                 |
-| **Model_Training**               | Contains the notebooks for training the baseline CNN models (VGG16, DenseNet121, and InceptionV3) separately for each dataset. Running these notebooks will generate the trained model files stored in the **Model** folder.                               |
-| **EnsembleModel_Implementation** | Contains the notebooks for implementing the proposed ensemble learning methods (Soft Voting, Weighted Voting, and Stacking). These notebooks load the trained models from the **Model** folder and perform ensemble prediction and performance evaluation. |
+Since Jupyter Notebooks with outputs are often too large to render directly on GitHub, you can use the **nbviewer** links below to view the notebooks with all outputs, training charts, and evaluation results fully visible.
+
+### 🧠 Model Training Notebooks
+These notebooks are used to train the baseline CNN models (VGG16, DenseNet121, and InceptionV3) for each dataset.
+
+| Notebook | Dataset | Render Link (with outputs) |
+| :--- | :---: | :---: |
+| 🌸 `kaggledataset-trainmodel.ipynb` | Kaggle Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/ModelTraining/kaggledataset-trainmodel.ipynb) |
+| 🌼 `tensorflowdataset-trainmodel.ipynb` | TensorFlow Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/ModelTraining/tensorflowdataset-trainmodel.ipynb) |
+| 🌺 `oxford-102-trainmodel.ipynb` | Oxford-102 Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/ModelTraining/oxford-102-trainmodel.ipynb) |
+
+### 🔄 Ensemble Implementation Notebooks
+These notebooks implement the proposed ensemble learning methods (Soft Voting, Weighted Voting, and Stacking) using the trained baseline models.
+
+| Notebook | Dataset | Render Link (with outputs) |
+| :--- | :---: | :---: |
+| 🌸 `kaggledataset-ensemble.ipynb` | Kaggle Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/EnsembleModel_Implementation/kaggledataset-ensemble.ipynb) |
+| 🌼 `ensemble-tensorflowdataset.ipynb` | TensorFlow Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/EnsembleModel_Implementation/ensemble-tensorflowdataset.ipynb) |
+| 🌺 `ensemble-oxford-102.ipynb` | Oxford-102 Flowers | [![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.org/github/Jingan08/Flower-Species-Recognition-using-ML/blob/main/EnsembleModel_Implementation/ensemble-oxford-102.ipynb) |
 
 ---
 
