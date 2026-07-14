@@ -94,11 +94,6 @@ Accuracy Comparison
 ```
 ├── SourceCode/
 │   │
-│   ├── Model/
-│   │   ├── Kaggle Flowers/
-│   │   ├── TensorFlow Flowers/
-│   │   └── Oxford-102 Flowers/
-│   │
 │   └── Code/
 │       │
 │       ├── Model_Training/
@@ -181,18 +176,6 @@ Accuracy Comparison
 
 ---
 
-# 📂 Repository Structure
-
-```text
-📦 Flower-Species-Recognition-using-ML
-│
-├── 📁 Kaggle Flowers
-├── 📁 TensorFlow Flowers
-├── 📁 Oxford-102 Flowers
-└── README.md
-```
-
----
 
 # 📑 Conference Paper
 
