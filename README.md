@@ -206,10 +206,6 @@ Accuracy Comparison
 
 **Teo Jing An**
 
-Bachelor of Computer Science (Artificial Intelligence)
-
-Multimedia University (MMU)
-
 ---
 
 # ⭐ If you find this project useful, please consider giving it a star!
