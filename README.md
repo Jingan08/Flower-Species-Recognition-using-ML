@@ -68,14 +68,15 @@ Flower Dataset
         │
         ▼
 Preprocessing
-(Resize • Normalize • Augmentation)
+(Resize • Normalize • Augmentation• Splitting)
         │
         ▼
-Transfer Learning
-        │
-        ▼
-Baseline CNN Models
+Feature Extraction
+Using Baseline CNN Models
 (VGG16 • DenseNet121 • InceptionV3)
+        │
+        ▼
+Output Prediction 
         │
         ▼
 Ensemble Learning
@@ -88,29 +89,35 @@ Performance Evaluation
 Accuracy Comparison
 ```
 
-> 📷 **Workflow Diagram**
-
-Insert your workflow image here.
+## 📁 Repository Structure
 
 ```
-images/workflow.png
+├── SourceCode/
+│   │
+│   ├── Model/
+│   │   ├── Kaggle Flowers/
+│   │   ├── TensorFlow Flowers/
+│   │   └── Oxford-102 Flowers/
+│   │
+│   └── Code/
+│       │
+│       ├── Model_Training/
+│       │   ├── Kaggle Flowers.ipynb
+│       │   ├── TensorFlow Flowers.ipynb
+│       │   └── Oxford-102 Flowers.ipynb
+│       │
+│       └── EnsembleModel_Implementation/
+│           ├── Kaggle Flowers.ipynb
+│           ├── TensorFlow Flowers.ipynb
+│           └── Oxford-102 Flowers.ipynb
 ```
+| Folder                           | Description                                                                                                                                                                                                                                                |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Model**                        | Contains the trained CNN models (.keras/.h5) for each dataset. These models are used by the ensemble implementation and do not need to be retrained unless required.                                                                                       |
+| **Code**                         | Contains all Jupyter Notebook (`.ipynb`) source code used in this project.                                                                                                                                                                                 |
+| **Model_Training**               | Contains the notebooks for training the baseline CNN models (VGG16, DenseNet121, and InceptionV3) separately for each dataset. Running these notebooks will generate the trained model files stored in the **Model** folder.                               |
+| **EnsembleModel_Implementation** | Contains the notebooks for implementing the proposed ensemble learning methods (Soft Voting, Weighted Voting, and Stacking). These notebooks load the trained models from the **Model** folder and perform ensemble prediction and performance evaluation. |
 
----
-
-# 🚀 Quick Start
-
-### Clone Repository
-
-```bash
-git clone
-```
-
-### Install Libraries
-
-```bash
-pip install tensorflow keras numpy pandas matplotlib scikit-learn opencv-python pillow
-```
 ---
 
 # 📊 Experimental Results
