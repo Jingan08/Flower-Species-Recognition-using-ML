@@ -40,7 +40,7 @@ The framework is evaluated using **three public flower datasets** with different
 | Dataset | Classes | Purpose | Dataset Link |
 |----------|---------:|----------------|-----------------------------|
 | 🌸 Kaggle Flowers Recognition | 5 | Simple classification | https://www.kaggle.com/datasets/alxmamaev/flowers-recognition/data |
-| 🌼 TensorFlow Flowers | 5 | Balanced dataset | http://download.tensorflow.org/example_images/flower_photos.tgz |
+| 🌼 TensorFlow Flowers | 5 | Balanced dataset | https://www.kaggle.com/datasets/jinganteo/tensorflow-flower-dataset |
 | 🌺 Oxford-102 Flowers | 102 | Fine-grained classification | https://www.robots.ox.ac.uk/~vgg/data/flowers/102/ |
 
 ---
