@@ -1,4 +1,5 @@
-# 🌸 Flower Species Recognition using Heterogeneous Ensemble Learning
+# Title : Flower Species Recognition using Machine Learning
+### 🌸 Flower Species Recognition using Heterogeneous Ensemble Learning
 
 <p align="center">
 
